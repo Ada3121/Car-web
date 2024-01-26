@@ -15,6 +15,30 @@
         
         <!-- CSS Libraries -->
         <style>
+#choose{
+    background: beige;
+}
+.why-choose-us {
+  padding: 20px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #555;
+}
          .preloader-container {
   position: fixed;
   top: 0;
@@ -288,6 +312,13 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <i class="flaticon-car-wash"></i>
+                            <h3>Anti-Rust Protection</h3>
+                            <p>To protect your car wash site from rust, consider applying corrosion-resistant coatings to exposed metal surfaces, using stainless steel equipment, and implementing regular maintenance to address any signs of rust promptly. Additionally, installing proper drainage systems can help prevent water accumulation, reducing the risk of corrosion.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <i class="flaticon-car-wash"></i>
                             <h3>Interior Washing</h3>
                             <p>Interior cleaning enhances your driving experience by removing dust, debris, and stains. Regular upkeep maintains a fresh and comfortable atmosphere inside your car, contributing to its overall care and value.</p>
                         </div>
@@ -338,8 +369,34 @@
             </div>
         </div>
         <!-- Service End -->
-        
-        
+        <div id="choose">
+        <h1 style="text-align:center ; color:red ; ">Why Choose Us?</h1>
+          <section class="why-choose-us">
+    <div class="feature">
+      <img src="img/technician.png" alt="Logo 1">
+      <h2>Skilled Technicians</h2>
+      <p>Our technicians are always up-to-date on the latest technology and auto repair methods, so you can rest assured that your car is in good hands with experts who are familiar with all its working parts.</p>
+    </div>
+
+    <div class="feature">
+      <img src="img/quick.png" alt="Logo 2">
+      <h2>Quick Service</h2>
+      <p>We value your time. We strive to do auto repair and maintenance quickly without sacrificing quality so you can get back on the road ASAP.</p>
+    </div>
+
+    <div class="feature">
+      <img src="img/wrench.png" alt="Logo 3">
+      <h2>Quality Parts And Materials</h2>
+      <p>We use high-quality parts to ensure your car’s longevity and performance. We buy these parts from trusted suppliers for your satisfaction.</p>
+    </div>
+
+    <div class="feature">
+      <img src="img/customer.png" alt="Logo 4">
+      <h2>Customer Satisfaction</h2>
+      <p>Your satisfaction is our top priority. Our team is always ready to help you and handle any issues you might have. We establish trust and exceptional service to build lasting relationships.</p>
+    </div>
+  </section>
+  </div>
         <!-- Facts Start -->
         <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
             <div class="container">
@@ -393,48 +450,54 @@
                     <p>Washing Plan</p>
                     <h2>Choose Your Plan</h2>
                 </div>
+
+
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="price-item">
+                        <div class="price-item featured-item">
                             <div class="price-header">
                                 <h3>Car Wash</h3>
-                                <h2><span>$</span><strong>25</strong><span>.99</span></h2>
+                                
+                                <h2><span>$</span><strong>20</strong><span></span></h2>
                             </div>
                             
                             </div>
                             <div class="price-footer">
-                                <a class="btn btn-custom" href="tel:08027472658">Book Now</a>
+                                <a style="text-align: center;  display: flex;
+    justify-content: center;"class="btn btn-custom" href="tel:08027472658">Book Now</a>
+    <br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <h3>Detailing</h3>
+                                <h2><span>$</span><strong>30</strong><span></span></h2>
+                            </div>
+                            
+                            </div>
+                            <div class="price-footer">
+                                <a style="text-align: center;  display: flex;
+    justify-content: center;"class="btn btn-custom" href="tel:08027472658">Book Now</a><br><br><br>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="price-item featured-item">
                             <div class="price-header">
-                                <h3>Detailing</h3>
-                                <h2><span>$</span><strong>35</strong><span>.99</span></h2>
+                                <h3>Monthly Subscription</h3>
+                                <h2><span>$</span><strong>100</strong><span></span></h2>
                             </div>
                             
                             </div>
                             <div class="price-footer">
-                                <a class="btn btn-custom" href="tel:08027472658">Book Now</a>
+                                <a style="text-align: center;  display: flex;
+    justify-content: center;"class="btn btn-custom" href="tel:08027472658">Book Now</a><br><br><br>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <h3>CarWash and Detailingg</h3>
-                                <h2><span>$</span><strong>49</strong><span>.99</span></h2>
-                            </div>
-                           
-                            <div class="price-footer">
-                                <a class="btn btn-custom" href="tel:08027472658">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Price End -->
         
         
@@ -747,4 +810,5 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
-</html>
+    </html>
+    
