@@ -39,78 +39,7 @@
 .feature p {
   color: #555;
 }
-         .preloader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.preloader-logo img {
-  width: 150px; /* Adjust the logo size as needed */
-}
-
-.preloader {
-  width: 50px;
-  height: 50px;
-  border: 4px solid #3498db; /* Change the color as needed */
-  border-top: 4px solid transparent;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-top: 20px;
-}
-
-.content {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  text-align: center;
-  margin-top: 50px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Additional styles for fading in/out */
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;      
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-  opacity: 0;  
-  }
-  100% {   opaci1y: 0;
- 
-  }
-}
-
-/* Set the delay for fading in/out */
-.preloader-container {
-  animation: fadeOut ease-in-out 5s forwards;
-}
-
-.content {
-  animation fadeOut 1s ease-in-out 5s forwards;
-  }
+        
         </style>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
