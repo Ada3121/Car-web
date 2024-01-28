@@ -312,6 +312,11 @@
   </section>
   </div>
         <!-- Facts Start -->
+                    <div id="counter">
+
+        <!-- counts -->
+
+                    </div>
   <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
             <div class="container">
                 <div class="row">
@@ -713,7 +718,27 @@
     </div>
     <div class="preloader"></div>
         <!-- JavaScript Libraries -->
-       
+       <script>
+
+        let counts = setInterval(updated);
+
+        let upto = 1000;
+
+        function updated() {
+
+            let count = document.getElementById("counter");
+
+            count.innerHTML = --upto;
+
+            if (upto === 0) {
+
+                clearInterval(counts);
+
+            }
+
+        }
+
+       </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
