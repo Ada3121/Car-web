@@ -332,8 +332,8 @@
                         <div class="facts-item">
                             <i class="fa fa-user"></i>
                             <div class="facts-text">
-                        <h3 class="counter1" id="counter1" style="color:white;">0</h3>
-    
+                        <div id="yourSectionId1">
+<div id="yourCounterId1">0</div>
                                 <p>Engineers & Workers</p>
                             </div>
                         </div>
@@ -342,7 +342,8 @@
                         <div class="facts-item">
                             <i class="fa fa-users"></i>
                             <div class="facts-text">
-                              <h3 class="counter2" id="counter2" style="color:white;">0</h3>
+                              <div id="yourSectionId2">
+<div id="yourCounterId2">0</div>
                                 <p>Happy Clients</p>
                             </div>
                         </div>
@@ -351,8 +352,8 @@
                         <div class="facts-item">
                             <i class="fa fa-check"></i>
                             <div class="facts-text">
-                            <h3 class="counter3" id="counter3" style="color:white;">0</h3>
-                            
+                            <div id="yourSectionId3">
+<div id="yourCounterId3">0</div>
                                 <p>Projects Completed</p>
                             </div>
                         </div>
@@ -753,6 +754,123 @@ var sectionElement = document.getElementById('yourSectionId');
     } else {
         console.log('Section element not found.');
            }
+
+
+
+           var sectionElement = document.getElementById('yourSectionId1');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId1'); // Replace with the actual id
+                var startCount = 0;
+                var endCount = 1000;
+                var duration = 2000; // in milliseconds
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+    }
+
+
+
+           var sectionElement = document.getElementById('yourSectionId2');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId2'); // Replace with the actual id
+                var startCount = 0;
+                var endCount = 1000;
+                var duration = 2000; // in milliseconds
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+    }
+
+
+
+           var sectionElement = document.getElementById('yourSectionId3');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId3'); // Replace with the actual id
+                var startCount = 0;
+                var endCount = 1000;
+                var duration = 2000; // in milliseconds
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+    }
        </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
