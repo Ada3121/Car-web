@@ -716,6 +716,24 @@
     <div class="preloader"></div>
         <!-- JavaScript Libraries -->
        <script>
+var sectionElement = document.getElementByClass('container');
+
+if (sectionElement) {
+    var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+            // Your code goes here, and it will run when the section is in view
+            console.log('You are on the specific section. Running the code.');
+            
+            // Disconnect the observer if needed
+            observer.disconnect();
+        }
+    });
+
+    // Start observing the section element
+    observer.observe(sectionElement);
+} else {
+    alert("done");
+}
 
         let counts = setInterval(updated);
 
