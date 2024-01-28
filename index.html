@@ -719,7 +719,7 @@
 
         let counts = setInterval(updated);
 
-        let upto = 1000;
+        let upto = 0;
 
         function updated() {
 
@@ -727,7 +727,7 @@
 
             count.innerHTML = --upto;
 
-            if (upto === 0) {
+            if (upto === 1000) {
 
                 clearInterval(counts);
 
