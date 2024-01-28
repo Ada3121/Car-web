@@ -726,7 +726,7 @@ var sectionElement = document.getElementById('yourSectionId');
                 // Number counter animation
                 var counterElement = document.getElementById('yourCounterId'); // Replace with the actual id
                 var startCount = 0;
-                var endCount = 1000;
+                var endCount = 3;
                 var duration = 2000; // in milliseconds
                 var startTime;
 
@@ -765,7 +765,7 @@ var sectionElement = document.getElementById('yourSectionId');
                 // Number counter animation
                 var counterElement = document.getElementById('yourCounterId1'); // Replace with the actual id
                 var startCount = 0;
-                var endCount = 1000;
+                var endCount = 100;
                 var duration = 2000; // in milliseconds
                 var startTime;
 
@@ -804,7 +804,7 @@ var sectionElement = document.getElementById('yourSectionId');
                 // Number counter animation
                 var counterElement = document.getElementById('yourCounterId2'); // Replace with the actual id
                 var startCount = 0;
-                var endCount = 1000;
+                var endCount = 500;
                 var duration = 2000; // in milliseconds
                 var startTime;
 
@@ -833,44 +833,6 @@ var sectionElement = document.getElementById('yourSectionId');
         console.log('Section element not found.');
     }
 
-
-
-           var sectionElement = document.getElementById('yourSectionId3');
-
-    if (sectionElement) {
-        var observer = new IntersectionObserver(function (entries) {
-            if (entries[0].isIntersecting) {
-                // Number counter animation
-                var counterElement = document.getElementById('yourCounterId3'); // Replace with the actual id
-                var startCount = 0;
-                var endCount = 1000;
-                var duration = 2000; // in milliseconds
-                var startTime;
-
-                function animateCounter(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    var progress = timestamp - startTime;
-                    var percentage = Math.min(progress / duration, 1);
-                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
-                    counterElement.innerHTML = currentCount;
-
-                    if (progress < duration) {
-                        requestAnimationFrame(animateCounter);
-                    }
-                }
-
-                requestAnimationFrame(animateCounter);
-
-                // Disconnect the observer if needed
-                observer.disconnect();
-            }
-        });
-
-        // Start observing the section element
-        observer.observe(sectionElement);
-    } else {
-        console.log('Section element not found.');
-    }
        </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
