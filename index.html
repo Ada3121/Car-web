@@ -322,7 +322,8 @@
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="facts-text">
                             
-                                <h3 class="counter" id="counter" style="color:white;">0</h3>
+                                <div id="yourSectionId">
+<div id="yourCounterId">0</div>
                                 <p>Service Points</p>
                             </div>
                         </div>
@@ -716,43 +717,42 @@
     <div class="preloader"></div>
         <!-- JavaScript Libraries -->
        <script>
-var sectionElement = document.getElementByClass('container');
+var sectionElement = document.getElementById('yourSectionId');
 
-if (sectionElement) {
-    var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            // Your code goes here, and it will run when the section is in view
-            console.log('You are on the specific section. Running the code.');
-            
-            // Disconnect the observer if needed
-            observer.disconnect();
-        }
-    });
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId'); // Replace with the actual id
+                var startCount = 0;
+                var endCount = 1000;
+                var duration = 2000; // in milliseconds
+                var startTime;
 
-    // Start observing the section element
-    observer.observe(sectionElement);
-} else {
-    alert("done");
-}
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
 
-        let counts = setInterval(updated);
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
 
-        let upto = 0;
+                requestAnimationFrame(animateCounter);
 
-        function updated() {
-
-            let count = document.getElementById("counter");
-
-            count.innerHTML = ++upto;
-
-            if (upto === 1000) {
-
-                clearInterval(counts);
-
+                // Disconnect the observer if needed
+                observer.disconnect();
             }
+        });
 
-        }
-
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+           }
        </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
