@@ -14,7 +14,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         
         <!-- CSS Libraries -->
-        <style>
+        
+        <style>         
+            #pa{
+                text-align: center;
+                background: url('https://iili.io/HWdl3Al.md.jpg');
+         
+                color:white;
+            }
+            * {
+    box-sizing: border-box
+}
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 100%
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
             #ex{
                 Width: 100px;
             }
@@ -42,7 +68,7 @@
 .feature p {
   color: #555;
 }
-        
+     
         </style>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -143,27 +169,8 @@
         </div>
         <!-- Nav Bar End -->
 
-
-        <!-- Carousel Start -->
-        <div class="carousel">
-            <div class="container-fluid">
-                <div class="owl-carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/carousel-1.jpg" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>Washing & Detailing</h3>
-                            <h1>Keep your Car Newer</h1>
-                            <p>
-                                "Preserving the longevity and aesthetic appeal of your car is a blend of routine care and thoughtful practices. Ensure your vehicle's performance with scheduled maintenance, timely oil changes, and attention to fluid levels. 
-                            </p>
-                            
-                        </div>
-                    </div>
-                    
         <!-- Carousel End -->
-        
+    
 
         <!-- About Start -->
         <div class="about">
@@ -199,7 +206,6 @@
 
 
         <!-- Service Start -->
-
         <div class="service">
             <div class="container">
                 <div class="section-header text-center">
@@ -258,7 +264,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <i class="flaticon-car-service-2"></i>
-                            <img id="ex"src="img/car-service(1).png" alt="logo">
+                            <img id="ex"src="img/car-service (1).png" alt="">
                             <h3>Wet Cleaning</h3>
                             <p>Wet cleaning, such as using water and appropriate cleaning solutions, effectively tackles stubborn stains and grime on various surfaces of your car. This method ensures a thorough and refreshing cleanliness, contributing to the overall upkeep of your vehicle.</p>
                         </div>
@@ -281,7 +287,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
         <!-- Service End -->
         <div id="choose">
         <h1 style="text-align:center ; color:red ; ">Why Choose Us?</h1>
@@ -310,34 +316,17 @@
       <p>Your satisfaction is our top priority. Our team is always ready to help you and handle any issues you might have. We establish trust and exceptional service to build lasting relationships.</p>
     </div>
   </section>
-        </div>
-
-        <!-- Facts End -->
-
-
-
-
-
-
-
-
-
-
-                    
-        
-
-                      <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+  </div>
+        <!-- Facts Start -->
+        <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="facts-item">
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="facts-text">
-                            
-                            
-<h3 id="yourCounterId">0</h3>
+                                <h3 data-toggle="counter-up">2</h3>
                                 <p>Service Points</p>
-                    
                             </div>
                         </div>
                     </div>
@@ -345,10 +334,8 @@
                         <div class="facts-item">
                             <i class="fa fa-user"></i>
                             <div class="facts-text">
-                    
-<h3 id="yourCounterId1">0</h3>
+                                <h3 data-toggle="counter-up">30</h3>
                                 <p>Engineers & Workers</p>
-                    
                             </div>
                         </div>
                     </div>
@@ -356,10 +343,8 @@
                         <div class="facts-item">
                             <i class="fa fa-users"></i>
                             <div class="facts-text">
-                              
-<h3 id="yourCounterId2">0</h3>
+                                <h3 data-toggle="counter-up">1500</h3>
                                 <p>Happy Clients</p>
-                            
                             </div>
                         </div>
                     </div>
@@ -367,22 +352,17 @@
                         <div class="facts-item">
                             <i class="fa fa-check"></i>
                             <div class="facts-text">
-                        
-<h3 id="yourCounterId3">501</h3>
+                                <h3 data-toggle="counter-up">1501</h3>
                                 <p>Projects Completed</p>
-                        
-                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-
-
-
-
-
-                          
+        </div>
+        <!-- Facts End -->
+        
+        
         <!-- Price Start -->
         <div class="price">
             <div class="container">
@@ -653,9 +633,9 @@
                                 </p>
                             </div>
                             <div class="blog-meta">
-                                <p><i class="fa fa-user"></i><a>Admin</a></p>
-                                <p><i class="fa fa-folder"></i><a>Web Design</a></p>
-                                <p><i class="fa fa-comments"></i><a>15 Comments</a></p>
+                                <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                                <p><i class="fa fa-folder"></i><a href="">Web Design</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
                             </div>
                         </div>
                     </div>
@@ -677,9 +657,9 @@
                                 </p>
                             </div>
                             <div class="blog-meta">
-                                <p><i class="fa fa-user"></i><a>Admin</a></p>
-                                <p><i class="fa fa-folder"></i><a>Web Design</a></p>
-                                <p><i class="fa fa-comments"></i><a>15 Comments</a></p>
+                                <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                                <p><i class="fa fa-folder"></i><a href="">Web Design</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
                             </div>
                         </div>
                     </div>
@@ -721,7 +701,7 @@
                 </div>
             </div>
             <div class="container copyright">
-                <p>&copy; <a href="#">Car wash</a>, All Right Reserved. Designed By Jo</p>
+                <p>&copy; <a href="#">Car wash</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com"> Codex</a></p>
             </div>
         </div>
         <!-- Footer End -->
@@ -735,124 +715,9 @@
       <a href="https://imgbox.com/yr46jsOx" target="_blank"><img src="https://thumbs2.imgbox.com/3d/8a/yr46jsOx_t.gif" alt="image host"/></a>
     </div>
     <div class="preloader"></div>
-        <!-- JavaScript Libraries -->
-       <script>
-           var sectionElement = document.getElementById('yourSectionId');
-
-    if (sectionElement) {
-        var observer = new IntersectionObserver(function (entries) {
-            if (entries[0].isIntersecting) {
-                // Number counter animation
-                var counterElement = document.getElementById('yourCounterId'); // Replace with the actual id
-                var startCount = 0;
-                var endCount = 3;
-                var duration = 2000; // in milliseconds
-                var startTime;
-
-                function animateCounter(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    var progress = timestamp - startTime;
-                    var percentage = Math.min(progress / duration, 1);
-                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
-                    counterElement.innerHTML = currentCount;
-
-                    if (progress < duration) {
-                        requestAnimationFrame(animateCounter);
-                    }
-                }
-
-                requestAnimationFrame(animateCounter);
-
-                // Disconnect the observer if needed
-                observer.disconnect();
-            }
-        });
-
-        // Start observing the section element
-        observer.observe(sectionElement);
-    } else {
-        console.log('Section element not found.');
-           }
-
-
-
-           var sectionElement = document.getElementById('yourSectionId');
-
-    if (sectionElement) {
-        var observer = new IntersectionObserver(function (entries) {
-            if (entries[0].isIntersecting) {
-                // Number counter animation
-                var counterElement = document.getElementById('yourCounterId1'); 
-                var startCount = 0;
-                var endCount = 100;
-                var duration = 2000; // in milliseconds
-                var startTime;
-
-                function animateCounter(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    var progress = timestamp - startTime;
-                    var percentage = Math.min(progress / duration, 1);
-                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
-                    counterElement.innerHTML = currentCount;
-
-                    if (progress < duration) {
-                        requestAnimationFrame(animateCounter);
-                    }
-                }
-
-                requestAnimationFrame(animateCounter);
-
-                // Disconnect the observer if needed
-                observer.disconnect();
-            }
-        });
-
-        // Start observing the section element
-        observer.observe(sectionElement);
-    } else {
-        console.log('Section element not found.');
-    }
-
-
-
-           var sectionElement = document.getElementById('yourSectionId');
-
-    if (sectionElement) {
-        var observer = new IntersectionObserver(function (entries) {
-            if (entries[0].isIntersecting) {
-                // Number counter animation
-                var counterElement = document.getElementById('yourCounterId2');
-                var startCount = 0;
-                var endCount = 500;
-                var duration = 2000;
-                var startTime;
-
-                function animateCounter(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    var progress = timestamp - startTime;
-                    var percentage = Math.min(progress / duration, 1);
-                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
-                    counterElement.innerHTML = currentCount;
-
-                    if (progress < duration) {
-                        requestAnimationFrame(animateCounter);
-                    }
-                }
-
-                requestAnimationFrame(animateCounter);
-
-                // Disconnect the observer if needed
-                observer.disconnect();
-            }
-        });
-
-        // Start observing the section element
-        observer.observe(sectionElement);
-    } else {
-        console.log('Section element not found.');
-           }
-       </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- JavaScript Libraries pt-->
+   
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -866,5 +731,4 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
-    </html>
-    
+</html>
