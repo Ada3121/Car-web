@@ -258,7 +258,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <i class="flaticon-car-service-2"></i>
-                            <img id="ex"src="img/car-service (1).png" alt="logo">
+                            <img id="ex"src="img/car-service(1).png" alt="logo">
                             <h3>Wet Cleaning</h3>
                             <p>Wet cleaning, such as using water and appropriate cleaning solutions, effectively tackles stubborn stains and grime on various surfaces of your car. This method ensures a thorough and refreshing cleanliness, contributing to the overall upkeep of your vehicle.</p>
                         </div>
@@ -322,9 +322,10 @@
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="facts-text">
                             
-                                <h3 id="yourSectionId">
-<div id="yourCounterId">0</h3>
+                                <div id="yourSectionId">
+<h3 id="yourCounterId">0</h3>
                                 <p>Service Points</p>
+                                    <div>
                             </div>
                         </div>
                     </div>
@@ -335,6 +336,7 @@
                         <div id="yourSectionId1">
 <h3 id="yourCounterId1">0</h3>
                                 <p>Engineers & Workers</p>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -345,6 +347,7 @@
                               <div id="yourSectionId2">
 <h3 id="yourCounterId2">0</h3>
                                 <p>Happy Clients</p>
+                                  <div>
                             </div>
                         </div>
                     </div>
@@ -355,6 +358,7 @@
                             <div id="yourSectionId3">
 <h3 id="yourCounterId3">501</h3>
                                 <p>Projects Completed</p>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -718,8 +722,120 @@
     <div class="preloader"></div>
         <!-- JavaScript Libraries -->
        <script>
+           var sectionElement = document.getElementById('yourSectionId');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId'); // Replace with the actual id
+                var startCount = 0;
+                var endCount = 3;
+                var duration = 2000; // in milliseconds
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+           }
 
 
+
+           var sectionElement = document.getElementById('yourSectionId1');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId1'); 
+                var startCount = 0;
+                var endCount = 100;
+                var duration = 2000; // in milliseconds
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+    }
+
+
+
+           var sectionElement = document.getElementById('yourSectionId2');
+
+    if (sectionElement) {
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                // Number counter animation
+                var counterElement = document.getElementById('yourCounterId2');
+                var startCount = 0;
+                var endCount = 500;
+                var duration = 2000;
+                var startTime;
+
+                function animateCounter(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = timestamp - startTime;
+                    var percentage = Math.min(progress / duration, 1);
+                    var currentCount = Math.floor(percentage * (endCount - startCount) + startCount);
+                    counterElement.innerHTML = currentCount;
+
+                    if (progress < duration) {
+                        requestAnimationFrame(animateCounter);
+                    }
+                }
+
+                requestAnimationFrame(animateCounter);
+
+                // Disconnect the observer if needed
+                observer.disconnect();
+            }
+        });
+
+        // Start observing the section element
+        observer.observe(sectionElement);
+    } else {
+        console.log('Section element not found.');
+           }
        </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
