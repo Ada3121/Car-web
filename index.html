@@ -339,7 +339,12 @@ img {
                         <div class="facts-item">
                             <i class="fa fa-user"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">30</h3>
+                                
+<div id="yourSectionId1">
+ 
+</div>
+
+<h3 id="yourCounterId1">0</h3>
                                 <p>Engineers & Workers</p>
                             </div>
                         </div>
@@ -348,7 +353,11 @@ img {
                         <div class="facts-item">
                             <i class="fa fa-users"></i>
                             <div class="facts-text">
-                                <h3 data-toggle="counter-up">1500</h3>
+                                <div id="yourSectionId2">
+ 
+</div>
+
+<h3 id="yourCounterId2">0</h3>
                                 <p>Happy Clients</p>
                             </div>
                         </div>
@@ -761,7 +770,7 @@ img {
 
 
 
-           var sectionElement = document.getElementById('yourSectionId1');
+           var sectionElement = document.getElementById('yourSectionId');
 
     if (sectionElement) {
         var observer = new IntersectionObserver(function (entries) {
@@ -800,7 +809,7 @@ img {
 
 
 
-           var sectionElement = document.getElementById('yourSectionId2');
+           var sectionElement = document.getElementById('yourSectionId');
 
     if (sectionElement) {
         var observer = new IntersectionObserver(function (entries) {
