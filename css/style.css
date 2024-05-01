@@ -5,6 +5,7 @@ h1{
     text-align: center;
     color: black;
     margin-top: -10px;
+     font-size: 30px;
 }
 img{
     width: 200px;
@@ -14,10 +15,7 @@ img{
    margin-left: 22%;
 }
 div{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    
 }
 a{
     text-align: center;
